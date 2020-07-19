@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar'
 import { makeStyles } from '@material-ui/core/styles';
 import { Paper, TextField, Button, } from '@material-ui/core';
+import Barchart from './Barchart'
 
 const useStyles = makeStyles((theme) => ({
   Paper: {
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <div className={classes.root}>
-      <Navbar />
+      {/* Navbar />
       <Paper elevation={3} className={classes.Paper}>
         <h1>Login</h1>
 
@@ -35,10 +36,9 @@ function App() {
             Login
           </Button>
         </form>
+      </Paper */}
 
-
-
-      </Paper>
+      <Barchart />
     </div >
 
   );
